@@ -42,9 +42,17 @@ As a result, the Zigbee firmware is stripped-down to the essentials, and could e
 ## Pairing
 
 1. **Power-cycle the lamp 6 times** to factory reset ([video](https://www.youtube.com/watch?v=npxOrPxVfe0)).
+   Wait 10 seconds
    
 2. **Power-cycle the lamp 15 times** (or 12, depending on model) to start Zigbee pairing.  
    When successful, the light will flash white. *Tip: Use a smart plug*
+
+3. Enable joining (permit join) in Zigbee2MQTT, and right after,
+   go to Touchlink and activate the scan. This forces a scan across all channels.
+
+   <img width="396" height="534" alt="image" src="https://github.com/user-attachments/assets/18ad7701-7b44-4b8b-b587-61d5276d3c31" />
+
+
 
 If the device flashes, but does not join, this may help:
 - Use a default Zigbee channel (11, 15, 20, 25)
